@@ -1,7 +1,26 @@
-body {
+/* Requirement: descendant selector for hyperlink */
+article a {
+  color: green;
+}
+
+/* Requirement: italic “Me Neither!” heading */
+h3 {
+  font-style: italic;
+}
+
+/* Requirement: custom class for “Not Me!” heading */
+.custom-heading {
+  color: purple;
+  font-weight: bold;
   font-family: Arial, sans-serif;
 }
 
+/* Requirement: modern selector using :is() */
+:is(h1, h2, h3) {
+  margin-bottom: 10px;
+}
+
+/* Your original green heading */
 h1 {
   color: darkgreen;
 }
