@@ -1,28 +1,13 @@
-/* ====== Basic Page Styling ====== */
+/* Basic styling required for external stylesheet */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 40px;
-    background-color: #f7f7f7;
-    color: #333;
+    margin: 20px;
 }
 
-/* ====== Main Heading ====== */
-h1 {
-    color: #2a4d8f;
-    text-align: center;
-}
-
-/* ====== Image Styling ====== */
 img {
+    width: 300px;
+    height: auto;
     display: block;
-    margin: 20px auto;
-    border-radius: 8px;
+    margin-top: 20px;
 }
 
-/* ====== List Styling ====== */
-ul {
-    background: #e3e9f5;
-    padding: 15px;
-    border-radius: 6px;
-}
