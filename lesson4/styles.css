@@ -1,0 +1,99 @@
+/* Global box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove the browser's default page margin */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #90c7e3;
+  font-weight: 700;
+}
+
+/* Unordered lists */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Level-two headings */
+h2 {
+  margin-block-end: 1.25rem;
+}
+
+/* Paragraphs */
+p {
+  margin-block: 1.25rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* Main page container */
+.container {
+  width: 100%;
+}
+
+/* FLEXBOX: Navigation */
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* FLEXBOX: Card Layout Container */
+.cards-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* FLEXBOX: Individual Cards */
+.card {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .main-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cards-layout {
+    flex-direction: column;
+  }
+}
+
