@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Layout */
+section {
+    display: flex;
+}
+
+/* Article */
+article {
+    width: 70%;
+    padding: 1rem;
+}
+
+/* Sidebar */
+aside {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+aside p {
+    margin-bottom: 1rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem; /* Required for baseline alignment */
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+        order: 1;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
