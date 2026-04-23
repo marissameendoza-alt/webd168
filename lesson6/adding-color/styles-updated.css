@@ -1,0 +1,53 @@
+/* Background */
+/* AI Improvement: Added a softer off‑white background for a more modern, less harsh look */
+body {
+    background-color: #faf7fc;
+    color: #333;
+    font-family: Arial, sans-serif; /* AI Improvement: Added a clean, readable font */
+    line-height: 1.6; /* AI Improvement: Improves readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+/* AI Improvement: Added subtle shadow + more padding for a modern card-like feel */
+header {
+    background-color: rgba(153, 51, 153, 0.5);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+/* AI Improvement: Added letter-spacing for a cleaner, modern heading style */
+h1 {
+    color: #993399;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #660066;
+    margin-top: 20px; /* AI Improvement: Better spacing between sections */
+}
+
+/* Hyperlinks */
+/* AI Improvement: Added a smooth transition for hover effects */
+a {
+    color: #993399;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff66ff;
+}
+
+/* Main Content */
+/* AI Improvement: Added a centered content container for better layout structure */
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
