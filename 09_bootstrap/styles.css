@@ -1,0 +1,146 @@
+/* -----------------------------------------------------------
+   Modern CSS Feature #1: CSS Variables
+   Color palette + shadows reused throughout the design
+----------------------------------------------------------- */
+:root {
+    --bg-light: #f2f4f7;
+    --blue-main: #2a6f97;
+    --blue-dark: #1b4965;
+    --accent: #174a63;
+    --card-shadow: rgba(0,0,0,0.12);
+    --img-shadow: rgba(0,0,0,0.18);
+}
+
+/* -----------------------------------------------------------
+   Global Page Styling
+----------------------------------------------------------- */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom right, #eef2f5, var(--bg-light));
+    color: #333;
+    line-height: 1.7;
+}
+
+/* -----------------------------------------------------------
+   HERO HEADER
+----------------------------------------------------------- */
+header {
+    background: var(--blue-dark);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+}
+
+header p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    opacity: 0.9;
+}
+
+/* -----------------------------------------------------------
+   Modern CSS Feature #2: clamp() for responsive headings
+----------------------------------------------------------- */
+h2 {
+    color: var(--blue-dark);
+    margin-top: 35px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    border-left: 4px solid var(--blue-main);
+    padding-left: 10px;
+    font-size: clamp(1.3rem, 3vw, 1.9rem);
+}
+
+/* -----------------------------------------------------------
+   Image Styling
+----------------------------------------------------------- */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px var(--img-shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+}
+
+/* -----------------------------------------------------------
+   Card Styling
+----------------------------------------------------------- */
+.card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px var(--card-shadow);
+    background-color: #ffffff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    color: var(--blue-dark);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* -----------------------------------------------------------
+   List Group Styling (Bootstrap component)
+----------------------------------------------------------- */
+.list-group-item {
+    border: none;
+    padding: 12px 16px;
+    font-size: 1.05rem;
+    background: #f8fafc;
+    transition: background 0.2s ease;
+}
+
+.list-group-item:hover {
+    background: #e9f2f8;
+}
+
+/* -----------------------------------------------------------
+   Buttons
+----------------------------------------------------------- */
+.btn-primary {
+    background-color: var(--blue-main);
+    border-color: var(--blue-main);
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* -----------------------------------------------------------
+   Footer
+----------------------------------------------------------- */
+footer {
+    background: #ffffff;
+    border-top: 1px solid #d9e1e7;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* -----------------------------------------------------------
+   Fade-in Animation
+----------------------------------------------------------- */
+.container, img, .card {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
